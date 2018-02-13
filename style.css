@@ -3,17 +3,37 @@
 	margin: 0 auto;
 	overflow: hidden;
 }
+
 ul {
-	width:  2000px;
+	width: 2000px;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
+
 .item {
 	width: 400px;
 	list-style: none;
 	float: left;
 }
+
 .item img {
 	height: 100%;
+}
+
+#controls::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.control-item {
+	border: 5px solid black;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+
+.control-item:first-child {
+	background: #00F;
 }

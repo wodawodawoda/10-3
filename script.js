@@ -17,7 +17,7 @@ $(function() {
 			counter = 0;
 		}
 		control[counter].style.background = '#00F';
-		if (counter == 0) {
+		if (counter === 0) {
 			control[control.length - 1].style.background = "#FFF";
 		} else {
 			control[counter - 1].style.background = "#FFF";
@@ -52,8 +52,5 @@ $(function() {
 		carouselList.animate({ 'marginLeft': 0 }, 500);
 	});
 	// setInterval(changeSlide, 2000);
-	function controls() {
-		var controlling = $('.control-item');
-	}
 
 });

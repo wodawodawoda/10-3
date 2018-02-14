@@ -16,24 +16,24 @@ ul {
 	list-style: none;
 	float: left;
 }
+#carousel {
+	text-align: center;
+}
 
 .item img {
 	height: 100%;
 }
 
-#controls::after {
-  content: "";
-  display: table;
-  clear: both;
+#controls::after, ul::after {
+	content: "";
+	display: table;
+	clear: both;
 }
+
 .control-item {
 	border: 5px solid black;
 	border-radius: 50%;
 	width: 25px;
 	height: 25px;
-	float: left;
-}
-
-.control-item:first-child {
-	background: #00F;
+	display: inline-block;
 }
